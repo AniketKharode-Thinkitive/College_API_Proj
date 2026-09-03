@@ -12,4 +12,9 @@ public interface CollegeRepo  extends JpaRepository<College, Integer>{
 	@Transactional
 	public List<College> findByName(String name); 
 
+    @Query
+    @Transactional
+     public int findByCity(String city) ; 
 }
+
+
